@@ -20,8 +20,22 @@ function isLucky(num) {
 console.log(isLucky("145064"));
 
 // ? Task-3
-// function capitalizeWords(words) {
 
-// }
+function capitalizeWords(text) {
+  let splittedText = text.split(" ");
+  // console.log(splittedText);
 
-// console.log(capitalizeWords("Hello my world"));
+  let result =
+    splittedText[0][0].toUpperCase() +
+    splittedText[0].slice(1) +
+    " " +
+    splittedText[1][0].toUpperCase() +
+    splittedText[1].slice(1) +
+    " " +
+    splittedText[2][0].toUpperCase() +
+    splittedText[2].slice(1);
+
+  console.log(result);
+}
+
+capitalizeWords("Hello my world");
